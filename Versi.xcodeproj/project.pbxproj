@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		6110FBFED830D1D6FB8C0796 /* Pods_Versi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C3F430F9339879ACAD975B3 /* Pods_Versi.framework */; };
+		7503EAC22374B2780057BE52 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7503EAC12374B2780057BE52 /* SearchTableViewCell.swift */; };
+		7503EAC42374BD600057BE52 /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7503EAC32374BD600057BE52 /* UIViewControllerExt.swift */; };
 		7580047F2371EA1D0004AD65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7580047E2371EA1D0004AD65 /* AppDelegate.swift */; };
 		758004812371EA1D0004AD65 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758004802371EA1D0004AD65 /* SceneDelegate.swift */; };
 		758004832371EA1D0004AD65 /* TrendingFeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758004822371EA1D0004AD65 /* TrendingFeedVC.swift */; };
@@ -18,10 +20,15 @@
 		7580049A2371F5830004AD65 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758004992371F5830004AD65 /* RoundedButton.swift */; };
 		7580049C2371F8B90004AD65 /* RoundedBorderTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7580049B2371F8B90004AD65 /* RoundedBorderTextField.swift */; };
 		7580049E2371FB6C0004AD65 /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7580049D2371FB6C0004AD65 /* Repo.swift */; };
+		758004A02371FE4E0004AD65 /* TrendingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7580049F2371FE4E0004AD65 /* TrendingTableViewCell.swift */; };
+		758004A3237203AE0004AD65 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758004A2237203AE0004AD65 /* Constants.swift */; };
+		758004A5237204DC0004AD65 /* DownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758004A4237204DC0004AD65 /* DownloadService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0C3F430F9339879ACAD975B3 /* Pods_Versi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Versi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7503EAC12374B2780057BE52 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		7503EAC32374BD600057BE52 /* UIViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
 		7580047B2371EA1D0004AD65 /* Versi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Versi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7580047E2371EA1D0004AD65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		758004802371EA1D0004AD65 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +41,9 @@
 		758004992371F5830004AD65 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		7580049B2371F8B90004AD65 /* RoundedBorderTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedBorderTextField.swift; sourceTree = "<group>"; };
 		7580049D2371FB6C0004AD65 /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
+		7580049F2371FE4E0004AD65 /* TrendingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingTableViewCell.swift; sourceTree = "<group>"; };
+		758004A2237203AE0004AD65 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		758004A4237204DC0004AD65 /* DownloadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadService.swift; sourceTree = "<group>"; };
 		9B7FE621A04D8437B4602C08 /* Pods-Versi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Versi.release.xcconfig"; path = "Pods/Target Support Files/Pods-Versi/Pods-Versi.release.xcconfig"; sourceTree = "<group>"; };
 		D89E69699377ABE369D18314 /* Pods-Versi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Versi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Versi/Pods-Versi.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,6 +90,7 @@
 		7580047D2371EA1D0004AD65 /* Versi */ = {
 			isa = PBXGroup;
 			children = (
+				758004A1237203790004AD65 /* Services */,
 				758004962371EBA30004AD65 /* Utilitiy */,
 				758004952371EB9D0004AD65 /* Extensions */,
 				758004942371EB900004AD65 /* Model */,
@@ -109,6 +120,8 @@
 			children = (
 				758004992371F5830004AD65 /* RoundedButton.swift */,
 				7580049B2371F8B90004AD65 /* RoundedBorderTextField.swift */,
+				7580049F2371FE4E0004AD65 /* TrendingTableViewCell.swift */,
+				7503EAC12374B2780057BE52 /* SearchTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -124,6 +137,7 @@
 		758004952371EB9D0004AD65 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				7503EAC32374BD600057BE52 /* UIViewControllerExt.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -131,8 +145,17 @@
 		758004962371EBA30004AD65 /* Utilitiy */ = {
 			isa = PBXGroup;
 			children = (
+				758004A2237203AE0004AD65 /* Constants.swift */,
 			);
 			path = Utilitiy;
+			sourceTree = "<group>";
+		};
+		758004A1237203790004AD65 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				758004A4237204DC0004AD65 /* DownloadService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		B8A45FDF1E1A05D0789337C2 /* Frameworks */ = {
@@ -265,11 +288,16 @@
 			files = (
 				7580049E2371FB6C0004AD65 /* Repo.swift in Sources */,
 				758004982371EE6F0004AD65 /* SearchVC.swift in Sources */,
+				7503EAC42374BD600057BE52 /* UIViewControllerExt.swift in Sources */,
 				7580049C2371F8B90004AD65 /* RoundedBorderTextField.swift in Sources */,
 				7580049A2371F5830004AD65 /* RoundedButton.swift in Sources */,
+				7503EAC22374B2780057BE52 /* SearchTableViewCell.swift in Sources */,
+				758004A02371FE4E0004AD65 /* TrendingTableViewCell.swift in Sources */,
+				758004A5237204DC0004AD65 /* DownloadService.swift in Sources */,
 				758004832371EA1D0004AD65 /* TrendingFeedVC.swift in Sources */,
 				7580047F2371EA1D0004AD65 /* AppDelegate.swift in Sources */,
 				758004812371EA1D0004AD65 /* SceneDelegate.swift in Sources */,
+				758004A3237203AE0004AD65 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

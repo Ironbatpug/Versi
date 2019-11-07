@@ -9,21 +9,22 @@
 import UIKit
 
 class Repo {
+    public private(set) var image: UIImage
     public private(set) var name: String
     public private(set) var description: String
     public private(set) var numberOfForks: Int
     public private(set) var language: String
-    public private(set) var numberOfContributers: Int
+    public private(set) var numberOfContributors: Int
     public private(set) var repoUrl: String
-    public private(set) var image: UIImage
     
-    init (name: String,description: String,numberOfForks: Int,language: String,numberOfContributers: Int,repoUrl: String,image: UIImage) {
+    init(image: UIImage, name: String, description: String, numberOfForks: Int, language: String, numberOfContributors: Int, repoUrl: String) {
+        self.image = image
         self.name = name
         self.description = description
         self.numberOfForks = numberOfForks
         self.language = language
-        self.numberOfContributers = numberOfContributers
+        self.numberOfContributors = numberOfContributors
         self.repoUrl = repoUrl
-        self.image = image
     }
 }
+
